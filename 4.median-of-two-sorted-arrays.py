@@ -5,8 +5,7 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
-        merged = nums1 + nums2
-        merged = sorted(merged)
+        merged = sorted(nums1 + nums2)
         if len(merged) % 2 == 1:
             median = merged[int(len(merged) / 2)]
         else:
